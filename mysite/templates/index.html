@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load staticfiles %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ethical hacking</title>
+<link rel="stylesheet" href="{% static "css/source.css" %}"/>
+</head>
+
+<body>
+<div class="image">
+ <img src="{% static "images/header.jpg" %}" width="2000" height="200" alt="header" /></div>
+<h1> ETHICAL HACKING</h1>
+<h5>CYBER SECURITY</h5>
+ <div>
+<ul>
+<li><a href="{% url 'index' %}" class="active">About</a></li>
+<li><a href="{% url 'tools' %}">Ethical hacking tools</a></li>
+<li><a href="{% url 'tricks' %}">Ethical hacking tricks</a></li>
+</ul>
+ </div>
+ <div class="container">
+<img src="{% static "images/middle.jpg" %}" width="2000" height="1152" alt="hack" />
+<h2><font color="#FFFFFF">Ethical Hacking</h2></font><br />
+<br/><p><font color="#99CCFF">An ethical hacker (also known as a white hat hacker) is the ultimate security professional. Ethical hackers know how to find and exploit vulnerabilities and weaknesses in various systems ust like a malicious hacker (or a black hat hacker). In fact, they both use the same skills; however, an ethical hacker uses those skills in a legitimate, lawful manner to try to find vulnerabilities and fix them before the bad guys can get there and try to break in.<br />
+ An ethical hacker’s role is similar to that of a penetration tester, but it involves broader duties. They break into systems legally and ethically. This is the primary difference between ethical hackers and real hackers—the legality.</font><br /><br />
+ <font color="#FFFFFF" >What is Ethical Hacking?</font><br/>
+<br /><font color="#99CCFF">Apart from testing duties, ethical hackers are associated with other responsibilities. The main idea is to replicate a malicious hacker at work and instead of exploiting the vulnerabilities for malicious purposes, seek countermeasures to shore up the system’s defenses.Ethical hacking refers to the act of locating weaknesses and vulnerabilities of computer and information systems by duplicating the intent and actions of malicious hackers. Ethical hacking is also known as penetration testing, intrusion testing, or red teaming. An ethical hacker is a security professional who applies their hacking skills for defensive purposes on behalf of the owners of information systems.<br/>
+<br />
+Scanning ports and seeking vulnerabilities: An ethical hacker uses port scanning tools like Nmap or Nessus to scan one’s own systems and find open ports. The vulnerabilities with each of the ports can be studied and remedial measures can be taken.
+<br />
+An ethical hacker will examine patch installations and make sure that they cannot be exploited.
+<br />
+The ethical hacker may engage in social engineering concepts like dumpster diving—rummaging through trash bins for passwords, charts, sticky notes, or anything with crucial information that can be used to generate an attack. </font><br />
+<br /><font color="#FFFFFF">Online Courses</font><br />
+<br />
+<font color="#99CCFF">Here is a site to learn the basics of ethical hacking</font><br />
+<a href="https://www.tutorialspoint.com/ethical_hacking/index.htm">Click here to open</a>
+
+</div>
+</body>
+</html>
